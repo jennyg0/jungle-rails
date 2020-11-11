@@ -6,7 +6,7 @@
     <table class="table table-bordered">
       <tbody>
         <tr> 
-          <th> <a href="admin/products">Products </a></th>
+          <th> <%= link_to 'Products',  [:admin, :products] %> </th>
           <th> <%=  @total_products %> </th>
         </tr>
         <tr> 
