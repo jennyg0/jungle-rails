@@ -17,7 +17,7 @@ RSpec.feature "Visitor navigates to product detail from home page", type: :featu
     end
   end
 
-xscenario "They go to details" do
+scenario "They go to details" do
   visit root_path
   
   save_screenshot('2a.png')

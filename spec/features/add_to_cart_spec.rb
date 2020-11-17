@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Visitor navigates to product detail from home page", type: :feature, js: true do
+RSpec.feature "Visitor is able to add item to cart", type: :feature, js: true do
 
   # SETUP
   before :each do
@@ -17,7 +17,7 @@ RSpec.feature "Visitor navigates to product detail from home page", type: :featu
     end
   end
 
-scenario "They go to details" do
+scenario "Adds to cart when clicked" do
   visit root_path
   expect(page).to have_text 'My Cart (0)'
   save_screenshot('3a.png')
