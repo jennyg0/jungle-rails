@@ -17,14 +17,14 @@ RSpec.feature "Visitor navigates to product detail from home page", type: :featu
     end
   end
 
-xscenario "They go to details" do
+scenario "They go to details" do
   visit root_path
-  
-  save_screenshot('2a.png')
-  first(:link, "Details").click
+  expect(page).to have_text 'My Cart (0)'
+  save_screenshot('3a.png')
+  first(:button, "Add").click
   sleep(1)
-  save_screenshot('2b.png')
+  save_screenshot('3b.png')
 
-  expect(page).to have_css '.products-show', count: 1
+  expect(page).to have_text 'My Cart (1)'
 end
 end
