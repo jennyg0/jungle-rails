@@ -25,3 +25,7 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+![home_page](https://github.com/jennyg0/jungle-rails/blob/master/public/imgs/home_page.png?raw=true)
+![cart](https://github.com/jennyg0/jungle-rails/blob/master/public/imgs/cart.png?raw=true)
+![complete_order](https://github.com/jennyg0/jungle-rails/blob/master/public/imgs/order_page.png?raw=true)
